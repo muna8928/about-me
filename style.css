@@ -1,3 +1,29 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --max-width: 1200px;
+}
+
 body {
-  background-color: aquamarine;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-color);
+}
+.logo {
+  max-width: 60px;
+}
+.hero {
+  padding: 150px 20px;
+
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+img {
+  width: 200px;
+}
+h1 {
+  font-size: 60px;
+  line-height: 1.5;
 }
