@@ -4,7 +4,6 @@
   --text-dark: #1f2937;
   --text-light: #6b7280;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --max-width: 1200px;
 }
 
 body {
@@ -14,18 +13,21 @@ body {
 .logo {
   max-width: 60px;
 }
-.hero {
-  padding: 150px 20px;
 
-  box-shadow: var(--box-shadow);
-  text-align: center;
+.profile {
+  width: 300px;
+  border-radius: 5px;
 }
-img {
-  width: 220px;
+.portfolio-section {
+  padding: 150px 20px;
 }
-h1 {
-  font-size: 60px;
-  line-height: 1.5;
+.portfolio-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.portfolio-section p {
+  font-size: 18px;
 }
 .btn-contact {
   background-color: var(--primary-color);
@@ -35,8 +37,19 @@ h1 {
   line-height: 25px;
   font-size: 18px;
 }
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
+
+.about-content {
+  margin: 30px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+    line-height: 2;
+  }
+
+  .portfolio-section {
+    text-align: center;
+    padding: 0;
+  }
 }
