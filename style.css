@@ -13,10 +13,36 @@ body {
 .logo {
   max-width: 60px;
 }
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  padding: 20px 0;
+}
+nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a {
+  color: var(--primary-color);
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
 
 .profile {
   width: 300px;
-  border-radius: 5px;
+  border-radius: 12px;
 }
 .portfolio-section {
   padding: 150px 20px;
@@ -24,6 +50,12 @@ body {
 .portfolio-section h1 {
   font-size: 64px;
   line-height: 80px;
+}
+
+.portfolio-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 .portfolio-section p {
@@ -36,9 +68,10 @@ body {
   padding: 15px 30px;
   line-height: 25px;
   font-size: 18px;
+  box-shadow: var(--box-shadow);
 }
 
-.about-content {
+.content {
   margin: 30px;
 }
 
