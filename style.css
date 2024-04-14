@@ -3,6 +3,7 @@
   --secondary-color: #f9f7fe;
   --text-dark: #1f2937;
   --text-light: #6b7280;
+  --bs-dark: #212529;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -70,9 +71,48 @@ nav a:hover {
   font-size: 18px;
   box-shadow: var(--box-shadow);
 }
-
+h4 {
+  font-size: 48px;
+  font-weight: bold;
+}
 .content {
   margin: 30px;
+}
+footer .email-link {
+  text-decoration: none;
+  color: var(--text-dark);
+
+  font-size: 24px;
+}
+
+footer {
+  margin: 60px 0;
+}
+footer .inquiry {
+  background-color: thistle;
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .inquiry p {
+  margin: 0;
+}
+
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+
+footer .socials a {
+  margin: 0 20px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer .socials a:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 @media (max-width: 900px) {
@@ -84,5 +124,20 @@ nav a:hover {
   .portfolio-section {
     text-align: center;
     padding: 0;
+  }
+  nav a {
+    font-size: 12px;
+  }
+
+  footer .inquiry {
+    padding: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .btn {
+    padding: 10px 20px;
+    line-height: 20px;
+    font-size: 14px;
   }
 }
