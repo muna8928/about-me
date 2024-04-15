@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I'm a creative front-end developer with a knack for creating beautiful, responsive and user-friendly websites. I've designed various projects including weather apps, personal blogs amongst others."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
@@ -25,42 +29,51 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
 
-    <title>Document</title>
+    <title>Front-end developer Memuna Garne</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="mimi.png" class="logo" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/portfolio.html">Portfolio</a>
-            </li>
-          </ul>
+    <div class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/" title="Homepage"
+            ><img src="mimi.png" class="logo" alt="Memuna's logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  title="Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Portfolio</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </div>
     <div class="portfolio-section container">
       <div class="about-content mb-5">
         <h1>ABOUT MEMUNA</h1>
@@ -105,7 +118,7 @@
         </div>
       </div>
       <footer>
-        <div class="text-center">
+        <div class="text-center" id="contact">
           <a href="mailto:garnememuna@gmail.com" class="email-link"
             >garnememuna@gmail.com</a
           >
@@ -114,15 +127,26 @@
           <a
             href="https://www.linkedin.com/in/memuna-garne-57a48a136/"
             target="_blank"
+            title="Linkedin"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-          <a href="https://github.com/muna8928/" target="_blank"
+          <a
+            href="https://github.com/muna8928/"
+            target="_blank"
+            title="Github profile"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="#"><i class="fa-solid fa-phone"></i></a>
+          <a href="/about.html" id="contact"
+            ><i class="fa-solid fa-phone" title="Email me"></i
+          ></a>
         </div>
+        <p class="memuna text-center mt-5 fs-6 text-muted">
+          This project was coded by <strong>Garne Memuna</strong> and it is
+          <a href="https://github.com/muna8928/" target="_blank"
+            >open-sourced</a
+          >
+        </p>
       </footer>
     </div>
-    <a href="portfolio.html">go back</a>
   </body>
 </html>
